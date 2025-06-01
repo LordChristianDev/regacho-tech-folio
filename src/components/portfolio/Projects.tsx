@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -15,6 +14,62 @@ const Projects = () => {
         </h2>
         
         <div className="max-w-6xl mx-auto space-y-12">
+          <Card className="border border-green-400/20 bg-gray-900/80 backdrop-blur-sm shadow-2xl hover:shadow-green-400/20 transition-all duration-500 transform hover:-translate-y-2">
+            <CardHeader className="bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-t-lg">
+              <CardTitle className="text-2xl">GrowRight PH</CardTitle>
+            </CardHeader>
+            <CardContent className="p-8">
+              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                A prototype web app designed to help Filipino farmers forecast crop yields and match 
+                planting seasons using public APIs. This project combines agricultural data with 
+                modern web technologies to support sustainable farming practices.
+              </p>
+              
+              {/* Project Images Gallery */}
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="space-y-4">
+                  <img 
+                    src="/lovable-uploads/3000dae7-08dc-4261-92a8-3777cd0c6d5a.png" 
+                    alt="GrowRight PH Landing Page - Smart Crop Recommendations"
+                    className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
+                  />
+                  <img 
+                    src="/lovable-uploads/287d29b6-04eb-4497-8c8d-f0f7c69aaeb5.png" 
+                    alt="GrowRight PH Features - Location-Based, Data-Driven, Smart Farming"
+                    className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
+                  />
+                </div>
+                <div className="space-y-4">
+                  <img 
+                    src="/lovable-uploads/e368b5c4-3f28-47f7-bce7-9a3c5a97a367.png" 
+                    alt="GrowRight PH Crop Recommendations Interface"
+                    className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
+                  />
+                  <img 
+                    src="/lovable-uploads/e705e99b-c333-4673-b6fd-8d46791aff02.png" 
+                    alt="GrowRight PH Crop Calendar and Planting Schedule"
+                    className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
+                  Web Development
+                </span>
+                <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
+                  API Integration
+                </span>
+                <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
+                  Agriculture Tech
+                </span>
+                <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
+                  Data Analytics
+                </span>
+              </div>
+            </CardContent>
+          </Card>
+
           <Card className="border border-green-400/20 bg-gray-900/80 backdrop-blur-sm shadow-2xl hover:shadow-green-400/20 transition-all duration-500 transform hover:-translate-y-2">
             <CardHeader className="bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-t-lg">
               <CardTitle className="text-2xl">Guardian Angel Health</CardTitle>
@@ -67,62 +122,6 @@ const Projects = () => {
                 </span>
                 <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
                   Real-time Tracking
-                </span>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="border border-green-400/20 bg-gray-900/80 backdrop-blur-sm shadow-2xl hover:shadow-green-400/20 transition-all duration-500 transform hover:-translate-y-2">
-            <CardHeader className="bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-t-lg">
-              <CardTitle className="text-2xl">GrowRight PH</CardTitle>
-            </CardHeader>
-            <CardContent className="p-8">
-              <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                A prototype web app designed to help Filipino farmers forecast crop yields and match 
-                planting seasons using public APIs. This project combines agricultural data with 
-                modern web technologies to support sustainable farming practices.
-              </p>
-              
-              {/* Project Images Gallery */}
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="space-y-4">
-                  <img 
-                    src="/lovable-uploads/3000dae7-08dc-4261-92a8-3777cd0c6d5a.png" 
-                    alt="GrowRight PH Landing Page - Smart Crop Recommendations"
-                    className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
-                  />
-                  <img 
-                    src="/lovable-uploads/287d29b6-04eb-4497-8c8d-f0f7c69aaeb5.png" 
-                    alt="GrowRight PH Features - Location-Based, Data-Driven, Smart Farming"
-                    className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
-                  />
-                </div>
-                <div className="space-y-4">
-                  <img 
-                    src="/lovable-uploads/e368b5c4-3f28-47f7-bce7-9a3c5a97a367.png" 
-                    alt="GrowRight PH Crop Recommendations Interface"
-                    className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
-                  />
-                  <img 
-                    src="/lovable-uploads/e705e99b-c333-4673-b6fd-8d46791aff02.png" 
-                    alt="GrowRight PH Crop Calendar and Planting Schedule"
-                    className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
-                  />
-                </div>
-              </div>
-              
-              <div className="flex flex-wrap gap-2 mb-6">
-                <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
-                  Web Development
-                </span>
-                <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
-                  API Integration
-                </span>
-                <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
-                  Agriculture Tech
-                </span>
-                <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
-                  Data Analytics
                 </span>
               </div>
             </CardContent>

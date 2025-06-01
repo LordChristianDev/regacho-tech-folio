@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Experience = () => {
@@ -11,8 +10,9 @@ const Experience = () => {
         "Lead developer of the SugboDoc Patient Application (appointments, prescriptions, care team, doctors)",
         "Conducted demos for clinics/hospitals across the Philippines",
         "Participated in startup events like DOHE Startup Summit",
-        "Digitized EMRs for hospitals in Borongan, Catbalogan, and Oras",
-        "Managed UI/UX, Figma prototypes, testing, Jira documentation, and branding"
+        "Modernize Hospital Operations in Oras Doctors Hospital, Borongan Doctors Hospital, Catbalogan Doctors Hospital",
+        "Managed UI/UX, Figma prototypes, testing, Jira documentation, and branding",
+        "Product & competitive research analysis for research in development"
       ]
     },
     {
