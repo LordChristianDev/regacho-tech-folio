@@ -32,15 +32,19 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-          Get in <span className="text-green-600">Touch</span>
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
+      {/* Futuristic background elements */}
+      <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-blue-500/10"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-blue-400"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <h2 className="text-4xl font-bold text-center mb-12">
+          Get in <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">Touch</span>
         </h2>
         
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-          <Card className="border-green-200 shadow-lg">
-            <CardHeader className="bg-green-600 text-white rounded-t-lg">
+          <Card className="border border-green-400/20 bg-gray-900/80 backdrop-blur-sm shadow-2xl">
+            <CardHeader className="bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-t-lg">
               <CardTitle className="text-xl">Send me a message</CardTitle>
             </CardHeader>
             <CardContent className="p-6">
@@ -52,7 +56,7 @@ const Contact = () => {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="border-green-200 focus:border-green-500"
+                    className="border-green-400/20 focus:border-green-400 bg-gray-800/50 text-white placeholder-gray-400"
                     required
                   />
                 </div>
@@ -63,7 +67,7 @@ const Contact = () => {
                     placeholder="Your Email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="border-green-200 focus:border-green-500"
+                    className="border-green-400/20 focus:border-green-400 bg-gray-800/50 text-white placeholder-gray-400"
                     required
                   />
                 </div>
@@ -73,13 +77,13 @@ const Contact = () => {
                     placeholder="Your Message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="border-green-200 focus:border-green-500 min-h-[120px]"
+                    className="border-green-400/20 focus:border-green-400 min-h-[120px] bg-gray-800/50 text-white placeholder-gray-400"
                     required
                   />
                 </div>
                 <Button 
                   type="submit" 
-                  className="w-full bg-green-600 hover:bg-green-700 text-white rounded-full py-3 transition-all duration-300 transform hover:scale-105"
+                  className="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white rounded-full py-3 transition-all duration-300 transform hover:scale-105"
                 >
                   Send Message
                 </Button>
@@ -88,10 +92,10 @@ const Contact = () => {
           </Card>
 
           <div className="space-y-6">
-            <Card className="border-green-200 shadow-lg">
+            <Card className="border border-green-400/20 bg-gray-900/80 backdrop-blur-sm shadow-2xl">
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">Let's Connect</h3>
-                <p className="text-gray-600 mb-6">
+                <h3 className="text-xl font-bold text-gray-100 mb-4">Let's Connect</h3>
+                <p className="text-gray-300 mb-6">
                   I'm always open to discussing new opportunities, interesting projects, 
                   or just having a chat about technology and innovation.
                 </p>
@@ -101,7 +105,7 @@ const Contact = () => {
                     href="https://github.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-gray-700 hover:text-green-600 transition-colors group"
+                    className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors group"
                   >
                     <Github className="w-6 h-6 group-hover:scale-110 transition-transform" />
                     <span>GitHub</span>
@@ -111,7 +115,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/lordchristian-regacho/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-gray-700 hover:text-green-600 transition-colors group"
+                    className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors group"
                   >
                     <Linkedin className="w-6 h-6 group-hover:scale-110 transition-transform" />
                     <span>LinkedIn</span>
@@ -119,7 +123,7 @@ const Contact = () => {
                   
                   <a 
                     href="mailto:christian@example.com"
-                    className="flex items-center space-x-3 text-gray-700 hover:text-green-600 transition-colors group"
+                    className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors group"
                   >
                     <Mail className="w-6 h-6 group-hover:scale-110 transition-transform" />
                     <span>Email</span>
@@ -128,9 +132,9 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-green-200 shadow-lg">
+            <Card className="border border-green-400/20 bg-gray-900/80 backdrop-blur-sm shadow-2xl">
               <CardContent className="p-6 text-center">
-                <p className="text-gray-600">
+                <p className="text-gray-300">
                   Currently based in the Philippines, available for remote work and collaboration.
                 </p>
               </CardContent>
