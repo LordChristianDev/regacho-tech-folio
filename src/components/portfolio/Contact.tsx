@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-green-50">
+    <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
           Get in <span className="text-green-600">Touch</span>
@@ -108,7 +108,7 @@ const Contact = () => {
                   </a>
                   
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://www.linkedin.com/in/lordchristian-regacho/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-gray-700 hover:text-green-600 transition-colors group"

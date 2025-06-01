@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-white px-6">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-white px-6">
       <div className="container mx-auto text-center animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-4">
           Lord Christian Carl H. 

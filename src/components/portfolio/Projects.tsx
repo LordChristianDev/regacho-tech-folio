@@ -41,10 +41,20 @@ const Projects = () => {
           <div className="mt-12 text-center">
             <Card className="border-green-200 shadow-lg">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Certifications</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-6">Certifications</h3>
+                <div className="mb-6">
+                  <img 
+                    src="/lovable-uploads/291db83a-b19e-457b-8faf-d066683c76f6.png" 
+                    alt="NLDML 2023 Conference Certificate - Paper Presentation by Lord Christian Carl H. Regacho"
+                    className="w-full max-w-2xl mx-auto rounded-lg shadow-md"
+                  />
+                </div>
                 <p className="text-lg text-gray-700">
                   <strong>Speaker & Participant</strong> at International Conference on NLP, 
                   Data Mining & Machine Learning (NLDML 2023) by AIRCC
+                </p>
+                <p className="text-md text-gray-600 mt-2">
+                  Presented paper: "Automated Identification of Disaster News for Crisis Management using Machine Learning"
                 </p>
               </CardContent>
             </Card>
