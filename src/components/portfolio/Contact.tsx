@@ -1,36 +1,8 @@
 
-import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { Card, CardContent } from "@/components/ui/card";
+import { Linkedin, Mail } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-    setFormData({ name: "", email: "", message: "" });
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
       {/* Futuristic background elements */}
@@ -42,104 +14,42 @@ const Contact = () => {
           Get in <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">Touch</span>
         </h2>
         
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+        <div className="max-w-2xl mx-auto">
           <Card className="border border-green-400/20 bg-gray-900/80 backdrop-blur-sm shadow-2xl">
-            <CardHeader className="bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-t-lg">
-              <CardTitle className="text-xl">Send me a message</CardTitle>
-            </CardHeader>
-            <CardContent className="p-6">
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <Input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    className="border-green-400/20 focus:border-green-400 bg-gray-800/50 text-white placeholder-gray-400"
-                    required
-                  />
-                </div>
-                <div>
-                  <Input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="border-green-400/20 focus:border-green-400 bg-gray-800/50 text-white placeholder-gray-400"
-                    required
-                  />
-                </div>
-                <div>
-                  <Textarea
-                    name="message"
-                    placeholder="Your Message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    className="border-green-400/20 focus:border-green-400 min-h-[120px] bg-gray-800/50 text-white placeholder-gray-400"
-                    required
-                  />
-                </div>
-                <Button 
-                  type="submit" 
-                  className="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white rounded-full py-3 transition-all duration-300 transform hover:scale-105"
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold text-gray-100 mb-6 text-center">Let's Connect</h3>
+              <p className="text-gray-300 mb-8 text-center text-lg">
+                I'm always open to discussing new opportunities, interesting projects, 
+                or just having a chat about technology and innovation.
+              </p>
+              
+              <div className="space-y-6">
+                <a 
+                  href="https://www.linkedin.com/in/lordchristian-regacho/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center space-x-4 text-gray-300 hover:text-green-400 transition-colors group p-4 rounded-lg border border-green-400/20 hover:border-green-400/40 bg-gray-800/30"
                 >
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-
-          <div className="space-y-6">
-            <Card className="border border-green-400/20 bg-gray-900/80 backdrop-blur-sm shadow-2xl">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-gray-100 mb-4">Let's Connect</h3>
-                <p className="text-gray-300 mb-6">
-                  I'm always open to discussing new opportunities, interesting projects, 
-                  or just having a chat about technology and innovation.
-                </p>
+                  <Linkedin className="w-8 h-8 group-hover:scale-110 transition-transform" />
+                  <span className="text-lg">Connect on LinkedIn</span>
+                </a>
                 
-                <div className="space-y-4">
-                  <a 
-                    href="https://github.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors group"
-                  >
-                    <Github className="w-6 h-6 group-hover:scale-110 transition-transform" />
-                    <span>GitHub</span>
-                  </a>
-                  
-                  <a 
-                    href="https://www.linkedin.com/in/lordchristian-regacho/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors group"
-                  >
-                    <Linkedin className="w-6 h-6 group-hover:scale-110 transition-transform" />
-                    <span>LinkedIn</span>
-                  </a>
-                  
-                  <a 
-                    href="mailto:christian@example.com"
-                    className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors group"
-                  >
-                    <Mail className="w-6 h-6 group-hover:scale-110 transition-transform" />
-                    <span>Email</span>
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border border-green-400/20 bg-gray-900/80 backdrop-blur-sm shadow-2xl">
-              <CardContent className="p-6 text-center">
+                <a 
+                  href="mailto:lordchristian.regacho@gmail.com"
+                  className="flex items-center justify-center space-x-4 text-gray-300 hover:text-green-400 transition-colors group p-4 rounded-lg border border-green-400/20 hover:border-green-400/40 bg-gray-800/30"
+                >
+                  <Mail className="w-8 h-8 group-hover:scale-110 transition-transform" />
+                  <span className="text-lg">lordchristian.regacho@gmail.com</span>
+                </a>
+              </div>
+              
+              <div className="mt-8 text-center">
                 <p className="text-gray-300">
                   Currently based in the Philippines, available for remote work and collaboration.
                 </p>
-              </CardContent>
-            </Card>
-          </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

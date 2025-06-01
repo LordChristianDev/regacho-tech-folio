@@ -14,7 +14,64 @@ const Projects = () => {
           Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">Projects</span>
         </h2>
         
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto space-y-12">
+          <Card className="border border-green-400/20 bg-gray-900/80 backdrop-blur-sm shadow-2xl hover:shadow-green-400/20 transition-all duration-500 transform hover:-translate-y-2">
+            <CardHeader className="bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-t-lg">
+              <CardTitle className="text-2xl">Guardian Angel Health</CardTitle>
+            </CardHeader>
+            <CardContent className="p-8">
+              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                A medical emergency response platform designed to streamline patient care during critical moments. 
+                Guardian Angel acts as a hybrid EMR and emergency response tool, allowing responders to be assigned 
+                to real-time emergencies, record detailed patient accounts, track vital signs and medications, 
+                bringing clarity and life-saving efficiency to emergency medical situations.
+              </p>
+              
+              {/* Guardian Angel Images Gallery */}
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="space-y-4">
+                  <img 
+                    src="/lovable-uploads/146e30f7-c4d7-4f1b-a330-87e36ab9f6e8.png" 
+                    alt="Guardian Angel Health Dashboard - Patient monitoring and vital signs tracking"
+                    className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
+                  />
+                  <img 
+                    src="/lovable-uploads/1a3cc1a8-0d54-43d7-b68d-6048fb41a70d.png" 
+                    alt="Guardian Angel Health Patient Directory - Comprehensive patient management"
+                    className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
+                  />
+                </div>
+                <div className="space-y-4">
+                  <img 
+                    src="/lovable-uploads/ce12602a-bb12-4970-8229-258b5905666e.png" 
+                    alt="Guardian Angel Health Medication Management - Real-time medication tracking"
+                    className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
+                  />
+                  <img 
+                    src="/lovable-uploads/17f182ea-d66f-4bd4-863d-c06248eee803.png" 
+                    alt="Guardian Angel Health Field Responders - Emergency response coordination"
+                    className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
+                  />
+                </div>
+              </div>
+              
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
+                  Healthcare Tech
+                </span>
+                <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
+                  Emergency Response
+                </span>
+                <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
+                  EMR System
+                </span>
+                <span className="bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-400/30">
+                  Real-time Tracking
+                </span>
+              </div>
+            </CardContent>
+          </Card>
+
           <Card className="border border-green-400/20 bg-gray-900/80 backdrop-blur-sm shadow-2xl hover:shadow-green-400/20 transition-all duration-500 transform hover:-translate-y-2">
             <CardHeader className="bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-t-lg">
               <CardTitle className="text-2xl">GrowRight PH</CardTitle>
@@ -68,9 +125,6 @@ const Projects = () => {
                   Data Analytics
                 </span>
               </div>
-              <Button className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white rounded-full transition-all duration-300 transform hover:scale-105">
-                Learn More
-              </Button>
             </CardContent>
           </Card>
 

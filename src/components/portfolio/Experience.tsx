@@ -54,11 +54,11 @@ const Experience = () => {
                 </div>
               </CardHeader>
               <CardContent className="p-6">
-                <ul className="space-y-2">
+                <ul className="space-y-3">
                   {exp.responsibilities.map((resp, respIndex) => (
                     <li key={respIndex} className="flex items-start">
-                      <span className="text-green-600 mr-2 mt-2">•</span>
-                      <span className="text-gray-700">{resp}</span>
+                      <div className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-700 leading-relaxed">{resp}</span>
                     </li>
                   ))}
                 </ul>
