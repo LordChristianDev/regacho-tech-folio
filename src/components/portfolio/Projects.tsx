@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -29,24 +30,24 @@ const Projects = () => {
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 <div className="space-y-4">
                   <img 
-                    src="/lovable-uploads/3000dae7-08dc-4261-92a8-3777cd0c6d5a.png" 
+                    src={`${import.meta.env.BASE_URL}lovable-uploads/3000dae7-08dc-4261-92a8-3777cd0c6d5a.png`}
                     alt="GrowRight PH Landing Page - Smart Crop Recommendations"
                     className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
                   />
                   <img 
-                    src="/lovable-uploads/287d29b6-04eb-4497-8c8d-f0f7c69aaeb5.png" 
+                    src={`${import.meta.env.BASE_URL}lovable-uploads/287d29b6-04eb-4497-8c8d-f0f7c69aaeb5.png`}
                     alt="GrowRight PH Features - Location-Based, Data-Driven, Smart Farming"
                     className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
                   />
                 </div>
                 <div className="space-y-4">
                   <img 
-                    src="/lovable-uploads/e368b5c4-3f28-47f7-bce7-9a3c5a97a367.png" 
+                    src={`${import.meta.env.BASE_URL}lovable-uploads/e368b5c4-3f28-47f7-bce7-9a3c5a97a367.png`}
                     alt="GrowRight PH Crop Recommendations Interface"
                     className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
                   />
                   <img 
-                    src="/lovable-uploads/e705e99b-c333-4673-b6fd-8d46791aff02.png" 
+                    src={`${import.meta.env.BASE_URL}lovable-uploads/e705e99b-c333-4673-b6fd-8d46791aff02.png`}
                     alt="GrowRight PH Crop Calendar and Planting Schedule"
                     className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
                   />
@@ -86,24 +87,24 @@ const Projects = () => {
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 <div className="space-y-4">
                   <img 
-                    src="/lovable-uploads/146e30f7-c4d7-4f1b-a330-87e36ab9f6e8.png" 
+                    src={`${import.meta.env.BASE_URL}lovable-uploads/146e30f7-c4d7-4f1b-a330-87e36ab9f6e8.png`}
                     alt="Guardian Angel Health Dashboard - Patient monitoring and vital signs tracking"
                     className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
                   />
                   <img 
-                    src="/lovable-uploads/1a3cc1a8-0d54-43d7-b68d-6048fb41a70d.png" 
+                    src={`${import.meta.env.BASE_URL}lovable-uploads/1a3cc1a8-0d54-43d7-b68d-6048fb41a70d.png`}
                     alt="Guardian Angel Health Patient Directory - Comprehensive patient management"
                     className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
                   />
                 </div>
                 <div className="space-y-4">
                   <img 
-                    src="/lovable-uploads/ce12602a-bb12-4970-8229-258b5905666e.png" 
+                    src={`${import.meta.env.BASE_URL}lovable-uploads/ce12602a-bb12-4970-8229-258b5905666e.png`}
                     alt="Guardian Angel Health Medication Management - Real-time medication tracking"
                     className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
                   />
                   <img 
-                    src="/lovable-uploads/17f182ea-d66f-4bd4-863d-c06248eee803.png" 
+                    src={`${import.meta.env.BASE_URL}lovable-uploads/17f182ea-d66f-4bd4-863d-c06248eee803.png`}
                     alt="Guardian Angel Health Field Responders - Emergency response coordination"
                     className="w-full rounded-lg shadow-lg border border-green-400/20 hover:border-green-400/40 transition-all duration-300"
                   />
@@ -135,7 +136,7 @@ const Projects = () => {
                 </h3>
                 <div className="mb-6">
                   <img 
-                    src="/lovable-uploads/291db83a-b19e-457b-8faf-d066683c76f6.png" 
+                    src={`${import.meta.env.BASE_URL}lovable-uploads/291db83a-b19e-457b-8faf-d066683c76f6.png`}
                     alt="NLDML 2023 Conference Certificate - Paper Presentation by Lord Christian Carl H. Regacho"
                     className="w-full max-w-2xl mx-auto rounded-lg shadow-md border border-green-400/20"
                   />
