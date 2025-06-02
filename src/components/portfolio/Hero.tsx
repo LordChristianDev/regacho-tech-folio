@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-green-400/5 to-blue-400/5 rounded-full blur-3xl"></div>
       
       <div className="container mx-auto text-center animate-fade-in relative z-10">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4">
+        <h1 className="text-5xl md:text-7xl font-bold mb-8">
           Lord Christian Carl H. 
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 block">Regacho</span>
         </h1>
