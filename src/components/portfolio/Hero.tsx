@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white px-6 py-20 relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white px-6 py-24 relative overflow-hidden">
       {/* Enhanced futuristic background elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.1),transparent_50%)]"></div>
       <div className="absolute inset-0 bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0deg,rgba(120,119,198,0.05)_90deg,transparent_180deg)]"></div>
@@ -29,9 +29,9 @@ const Hero = () => {
           </div>
         </div>
         
-        <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
-          <span className="block text-white">Lord Christian Carl H.</span>
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 animate-pulse">
+        <h1 className="text-6xl md:text-8xl font-bold mb-12 leading-[1.1] pb-4">
+          <span className="block text-white mb-2">Lord Christian Carl H.</span>
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 animate-pulse pb-2">
             Regacho
           </span>
         </h1>
